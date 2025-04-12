@@ -2,17 +2,28 @@
   "name": "cyber-portfolio",
   "version": "1.0.0",
   "description": "A futuristic, game-like portfolio website",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "vite",
-    "build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "three": "^0.160.0",
     "gsap": "^3.12.4",
-    "vanilla-tilt": "^1.8.1"
+    "vanilla-tilt": "^1.8.1",
+    "@react-three/fiber": "^8.15.16",
+    "@react-three/drei": "^9.97.0",
+    "framer-motion": "^11.0.5",
+    "react-router-dom": "^6.22.1",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.10"
   }
 } 
