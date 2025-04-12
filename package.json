@@ -1,0 +1,18 @@
+{
+  "name": "cyber-portfolio",
+  "version": "1.0.0",
+  "description": "A futuristic, game-like portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "three": "^0.160.0",
+    "gsap": "^3.12.4",
+    "vanilla-tilt": "^1.8.1"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10"
+  }
+} 

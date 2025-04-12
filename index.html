@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="scanlines"></div>
+    <div class="data-stream"></div>
+    
+    <div class="hud-container">
+        <div class="hud-top"></div>
+        <div class="hud-left"></div>
+        <div class="hud-right"></div>
+        <div class="hud-bottom"></div>
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
+    </div>
+
+    <div class="cyber-portal">
+        <div class="portal-ring"></div>
+        <div class="portal-core"></div>
+    </div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <main>
+        <header class="cyber-header">
+            <div class="glitch-container">
+                <h1 class="glitch" data-text="CYBER_DEV">CYBER_DEV</h1>
+            </div>
+            <div class="avatar-container">
+                <div class="hologram">
+                    <div class="hologram-scanner"></div>
+                    <div class="hologram-avatar">
+                        <div class="avatar-head"></div>
+                        <div class="avatar-body"></div>
+                        <div class="avatar-arm left"></div>
+                        <div class="avatar-arm right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-indicator">
+                <span class="status-text">SYSTEM: ONLINE</span>
+                <div class="status-pulse"></div>
+            </div>
+        </header>
+
+        <nav class="cyber-nav">
+            <button class="cyber-button" data-section="about">
+                <i class="fas fa-user-circle"></i>
+                <span>ABOUT.exe</span>
+            </button>
+            <button class="cyber-button" data-section="projects">
+                <i class="fas fa-code"></i>
+                <span>PROJECTS.sys</span>
+            </button>
+            <button class="cyber-button" data-section="skills">
+                <i class="fas fa-brain"></i>
+                <span>SKILLS.dat</span>
+            </button>
+            <button class="cyber-button" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>CONTACT.net</span>
+            </button>
+        </nav>
+
+        <section id="about" class="cyber-panel">
+            <div class="panel-content">
+                <h2 class="cyber-title">About_Me</h2>
+                <div class="cyber-text">
+                    <p>Welcome to my digital realm. I am a web developer crafting the future of the internet.</p>
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-title">terminal.exe</span>
+                            <div class="terminal-controls">
+                                <span class="terminal-control"></span>
+                                <span class="terminal-control"></span>
+                                <span class="terminal-control"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line">> <span class="typing-text">Initializing system...</span></p>
+                            <p class="terminal-line">> <span class="typing-text">Loading developer profile...</span></p>
+                            <p class="terminal-line">> <span class="typing-text">Profile loaded successfully.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="cyber-panel">
+            <div class="panel-content">
+                <h2 class="cyber-title">Project_Matrix</h2>
+                <div class="project-grid">
+                    <div class="project-card" data-tilt>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Project_Alpha</h3>
+                                <div class="card-icon"><i class="fas fa-code"></i></div>
+                            </div>
+                            <p>Description loading...</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                            </div>
+                            <button class="cyber-button small">VIEW_PROJECT</button>
+                        </div>
+                    </div>
+                    <div class="project-card" data-tilt>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Project_Beta</h3>
+                                <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                            </div>
+                            <p>Description loading...</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <button class="cyber-button small">VIEW_PROJECT</button>
+                        </div>
+                    </div>
+                    <div class="project-card" data-tilt>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Project_Gamma</h3>
+                                <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                            </div>
+                            <p>Description loading...</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Three.js</span>
+                                <span class="tech-tag">WebGL</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                            <button class="cyber-button small">VIEW_PROJECT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="cyber-panel">
+            <div class="panel-content">
+                <h2 class="cyber-title">Skill_Matrix</h2>
+                <div class="skill-container">
+                    <div class="skill-bar" data-skill="HTML/CSS">
+                        <div class="skill-label">HTML/CSS</div>
+                        <div class="skill-progress"></div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                    <div class="skill-bar" data-skill="JavaScript">
+                        <div class="skill-label">JavaScript</div>
+                        <div class="skill-progress"></div>
+                        <div class="skill-percentage">85%</div>
+                    </div>
+                    <div class="skill-bar" data-skill="React">
+                        <div class="skill-label">React</div>
+                        <div class="skill-progress"></div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    <div class="skill-bar" data-skill="Node.js">
+                        <div class="skill-label">Node.js</div>
+                        <div class="skill-progress"></div>
+                        <div class="skill-percentage">75%</div>
+                    </div>
+                    <div class="skill-bar" data-skill="Three.js">
+                        <div class="skill-label">Three.js</div>
+                        <div class="skill-progress"></div>
+                        <div class="skill-percentage">70%</div>
+                    </div>
+                </div>
+                <div class="skill-radar">
+                    <canvas id="skill-radar-canvas"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cyber-panel">
+            <div class="panel-content">
+                <h2 class="cyber-title">Contact_Protocol</h2>
+                <form class="cyber-form">
+                    <div class="form-group">
+                        <label class="cyber-label">ENTER_NAME</label>
+                        <input type="text" class="cyber-input" placeholder="ENTER_NAME">
+                        <div class="input-border"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="cyber-label">ENTER_EMAIL</label>
+                        <input type="email" class="cyber-input" placeholder="ENTER_EMAIL">
+                        <div class="input-border"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="cyber-label">ENTER_MESSAGE</label>
+                        <textarea class="cyber-input" placeholder="ENTER_MESSAGE"></textarea>
+                        <div class="input-border"></div>
+                    </div>
+                    <button type="submit" class="cyber-button">
+                        <span class="button-text">SEND_MESSAGE</span>
+                        <span class="button-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <p>© 2023 CYBER_DEV. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cursor-glow"></div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html> 
